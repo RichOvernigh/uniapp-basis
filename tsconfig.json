@@ -16,7 +16,10 @@
       "webpack-env",
       "@dcloudio/types",
       "miniprogram-api-typings",
-      "mini-types"
+      "mini-types",
+      // 添加 weixin 的声明
+      "weixin-app",
+      "@dcloudio/types/uni-app"
     ],
     "paths": {
       "@/*": [
@@ -30,6 +33,13 @@
       "scripthost"
     ]
   },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
   "exclude": [
     "node_modules",
     "unpackage",
